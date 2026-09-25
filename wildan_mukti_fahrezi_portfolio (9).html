@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildan Mukti Fahrezi - Operations & Hospitality Professional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-primary-500 selection:text-white">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="text-xl font-bold text-primary-900 tracking-tight flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-primary-600 inline-block"></span>
+                Wildan Mukti Fahrezi
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-primary-600 transition-colors">About</a>
+                <a href="#experience" class="hover:text-primary-600 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-primary-600 transition-colors">Projects & Certificates</a>
+                <a href="#skills" class="hover:text-primary-600 transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-primary-600 transition-colors">Contact</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-primary-600 text-white font-medium text-sm hover:bg-primary-700 transition-colors shadow-md shadow-primary-600/20">
+                    Get in Touch
+                </a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" aria-label="Toggle Menu" class="md:hidden text-slate-700 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block py-2 text-slate-700 hover:text-primary-600 font-medium">About</a>
+            <a href="#experience" class="block py-2 text-slate-700 hover:text-primary-600 font-medium">Experience</a>
+            <a href="#projects" class="block py-2 text-slate-700 hover:text-primary-600 font-medium">Projects & Certificates</a>
+            <a href="#skills" class="block py-2 text-slate-700 hover:text-primary-600 font-medium">Skills</a>
+            <a href="#contact" class="block py-2 text-slate-700 hover:text-primary-600 font-medium">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen pt-28 pb-16 flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-slate-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-100 text-primary-700 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-mug-hot"></i> Operations & Hospitality Professional
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-primary-900 leading-tight">
+                        Excellence in <span class="text-primary-600">Hospitality</span> & Store Operations
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0">
+                        Tourism graduate with hands-on experience in the F&B industry as Operations Manager, Barista, and Assistant Barista Trainer. Dedicated to service excellence and creating exceptional guest experiences.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors shadow-lg shadow-primary-600/20 text-center">
+                            Hire Me <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#experience" class="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-slate-300 font-medium text-slate-700 hover:border-primary-600 hover:text-primary-600 transition-colors text-center">
+                            Explore CV
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-80 sm:w-80 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-200">
+                        <img src="https://i.imgur.com/YdU9qnh.png" alt="Wildan Mukti Fahrezi" class="w-full h-full object-cover object-top" onerror="this.src='https://placehold.co/400x500/1e3a8a/ffffff?text=Wildan+Mukti'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent pointer-events-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-primary-900 tracking-tight">About Me</h2>
+                <div class="w-16 h-1 bg-primary-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-600 mt-4">Bridging strategic operational management with top-tier hospitality standards.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-900 mb-2">Education</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Bachelor in Sharia Tourism from Sayyid Ali Rahmatullah State Islamic University of Tulungagung (GPA 3.44). Focused on tourism, hospitality, and guest satisfaction.
+                    </p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-900 mb-2">Core Philosophy</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Paying close attention to service quality, workflow accuracy, and small details that make a tangible difference in customer experience and store profitability.
+                    </p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-900 mb-2">Certifications</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Certified Professional Barista by Badan Nasional Sertifikasi Profesi (BNSP) and experienced assistant training instructor for regional development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-primary-900 tracking-tight">Work Experience</h2>
+                <div class="w-16 h-1 bg-primary-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-600 mt-4">A proven track record in F&B operations, team leadership, and hospitality workflows.</p>
+            </div>
+            
+            <div class="space-y-8">
+                <!-- Experience Item 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 relative">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                        <div>
+                            <span class="text-xs font-semibold text-primary-600 uppercase tracking-wider">Jan 2026 – Expected</span>
+                            <h3 class="text-xl font-bold text-primary-900">Barista</h3>
+                            <p class="text-slate-600 font-medium">PT Bumi Berkah Boga (Kenangan Coffee) – Tulungagung, East Java</p>
+                        </div>
+                        <span class="inline-flex px-3 py-1 rounded-full bg-blue-50 text-primary-700 text-xs font-semibold w-fit">Full-time</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-600 text-sm space-y-2 leading-relaxed">
+                        <li>Performed store deployment duties, including ingredient preparation, customer service, cashier operations, EDC transactions, sales deposits, coffee machine operation, and beverage preparation in accordance with company SOPs.</li>
+                        <li>Worked in a high-paced service environment, handling 750+ beverage orders along with various food orders.</li>
+                        <li>Conducted daily and monthly stock opname to monitor and report raw material inventory, placing supplier orders accordingly.</li>
+                        <li>Maintained exceptional customer service and minimized customer complaints through prompt and responsive service.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 relative">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                        <div>
+                            <span class="text-xs font-semibold text-primary-600 uppercase tracking-wider">Jan 2023 – Nov 2025</span>
+                            <h3 class="text-xl font-bold text-primary-900">Operations Manager</h3>
+                            <p class="text-slate-600 font-medium">Loka Kopi Alternative Space – Tulungagung, East Java</p>
+                        </div>
+                        <span class="inline-flex px-3 py-1 rounded-full bg-blue-50 text-primary-700 text-xs font-semibold w-fit">Management</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-600 text-sm space-y-2 leading-relaxed">
+                        <li>Managed daily store operations, ensuring service quality, team performance, and operational standards were consistently maintained.</li>
+                        <li>Developed and implemented marketing initiatives, promotional campaigns, and content strategies to increase customer engagement and sales.</li>
+                        <li>Analysed customer behaviour, market trends, and business performance to support target-market development.</li>
+                        <li>Coordinated menu and product development, inventory, procurement, and cost structures to maintain operational efficiency.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 relative">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                        <div>
+                            <span class="text-xs font-semibold text-primary-600 uppercase tracking-wider">23 Jun – 25 Jun 2025</span>
+                            <h3 class="text-xl font-bold text-primary-900">Assistant Barista Training Instructor</h3>
+                            <p class="text-slate-600 font-medium">Disnaker Kabupaten Kediri – Kediri, East Java</p>
+                        </div>
+                        <span class="inline-flex px-3 py-1 rounded-full bg-blue-50 text-primary-700 text-xs font-semibold w-fit">Instructor</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-600 text-sm space-y-2 leading-relaxed">
+                        <li>Assisted instructors in delivering barista training sessions combining theoretical instruction with hands-on practice.</li>
+                        <li>Guided participants through basic coffee preparation techniques, barista workflow, and equipment handling.</li>
+                        <li>Observed participants during practical sessions and provided guidance and constructive feedback.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Certificates Section (Grid Card with Certificate Previews) -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-primary-900 tracking-tight">Projects & Achievements</h2>
+                <div class="w-16 h-1 bg-primary-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-600 mt-4">Official certifications, competition accolades, and leadership milestones. Click any certificate card to view high-resolution previews.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: Barista Battle Winner with Certificate Thumbnail -->
+                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:shadow-lg transition-shadow">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center font-bold mb-4">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-primary-600">2023</span>
+                        <h3 class="text-lg font-bold text-primary-900 mt-1 mb-2">3rd Place Winner Barista Battle</h3>
+                        <p class="text-slate-600 text-sm mb-4">Ngadiluwih Bersinergi, Peringatan HUT RI Ke-78. Competed showcasing speed, workflow precision, and beverage quality.</p>
+                        
+                        <!-- Certificate Thumbnail Preview -->
+                        <div class="rounded-xl overflow-hidden border border-slate-200 bg-white cursor-pointer group relative shadow-sm" onclick="openModal('Wildan Mukti.jpg', 'Piagam Penghargaan - Juara 3 Barista Battle')">
+                            <img src="https://i.imgur.com/XhG3DUf.png" alt="Sertifikat Juara 3 Barista Battle" class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/400x300/1e3a8a/ffffff?text=Barista+Certificate'">
+                            <div class="absolute inset-0 bg-primary-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold gap-1.5">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                        <span>Competition</span>
+                        <span class="font-medium text-primary-900">Podium Finisher</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: BNSP Certification with Certificate Thumbnail -->
+                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:shadow-lg transition-shadow">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center font-bold mb-4">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-primary-600">2024</span>
+                        <h3 class="text-lg font-bold text-primary-900 mt-1 mb-2">Certified Professional Barista</h3>
+                        <p class="text-slate-600 text-sm mb-4">Official national competency certification issued by Badan Nasional Sertifikasi Profesi (BNSP) for Food & Beverage.</p>
+                        
+                        <!-- Certificate Thumbnail Preview -->
+                        <div class="rounded-xl overflow-hidden border border-slate-200 bg-white cursor-pointer group relative shadow-sm" onclick="openModal('Sertifikat pendukung_2.jpg', 'Sertifikat Kompetensi BNSP - Food & Beverage / Barista')">
+                            <img src="https://i.imgur.com/nIUY8m3.jpeg" alt="Sertifikat BNSP" class="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/400x300/1e3a8a/ffffff?text=BNSP+Certificate'">
+                            <div class="absolute inset-0 bg-primary-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold gap-1.5">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> View Certificate
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                        <span>Certification</span>
+                        <span class="font-medium text-primary-900">BNSP</span>
+                    </div>
+                </div>
+
+                <!-- Card 3: Organization & Leadership -->
+                <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 flex flex-col justify-between hover:shadow-lg transition-shadow">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center font-bold mb-4">
+                            <i class="fa-solid fa-users-rectangle"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-primary-600">2023 – 2024</span>
+                        <h3 class="text-lg font-bold text-primary-900 mt-1 mb-2">BPW FK KMI Jawa Timur</h3>
+                        <p class="text-slate-600 text-sm mb-4">Active organizational leadership role contributing to regional student cooperative network initiatives and team coordination.</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+                        <span>Organization</span>
+                        <span class="font-medium text-primary-900">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal Preview -->
+    <div id="cert-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden shadow-2xl relative">
+            <div class="p-4 sm:px-6 sm:py-4 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+                <h3 id="modal-title" class="text-lg font-bold text-primary-900 truncate">Certificate Preview</h3>
+                <button onclick="closeModal()" class="w-10 h-10 rounded-full bg-slate-200 hover:bg-slate-300 text-slate-700 flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <div class="p-4 sm:p-6 overflow-y-auto flex-1 flex items-center justify-center bg-slate-900/5">
+                <img id="modal-img" src="" alt="Certificate" class="max-h-[70vh] w-auto object-contain rounded-xl shadow-lg border border-slate-200">
+            </div>
+            <div class="p-4 bg-slate-50 border-t border-slate-200 text-center">
+                <button onclick="closeModal()" class="px-6 py-2.5 rounded-xl bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors text-sm">
+                    Close Preview
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Skills Section (Badge layout) -->
+    <section id="skills" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-primary-900 tracking-tight">My Skills</h2>
+                <div class="w-16 h-1 bg-primary-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-600 mt-4">A balanced combination of technical F&B expertise, quality systems, and interpersonal abilities.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Hard Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60">
+                    <h3 class="text-xl font-bold text-primary-900 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-gears text-primary-600"></i> Hard Skills
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Coffee Knowledge</span>
+                        <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">ISO 9001:2015</span>
+                        <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Warehouse Operations</span>
+                        <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Stock & Inventory Management</span>
+                        <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Halal Food Handling</span>
+                        <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">POS System</span>
+                        <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Cash Management</span>
+                        <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Microsoft Office</span>
+                        <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Google Spreadsheet</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills & Languages -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-primary-900 mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-brain text-primary-600"></i> Soft Skills
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Leadership</span>
+                            <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Adaptive</span>
+                            <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Communication</span>
+                            <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Negotiation</span>
+                            <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Customer Service</span>
+                            <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Handling Complaint</span>
+                            <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Attention to Detail</span>
+                            <span class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 text-sm font-medium">Problem Solving</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-primary-900 uppercase tracking-wider mb-3">Languages & License</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-primary-100 text-primary-700 text-xs font-semibold">Indonesian (Native)</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-primary-100 text-primary-700 text-xs font-semibold">Javanese (Native)</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-primary-100 text-primary-700 text-xs font-semibold">English (Intermediate)</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">SIM C License</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-primary-900 tracking-tight">Get In Touch</h2>
+                <div class="w-16 h-1 bg-primary-600 mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-600 mt-4">Let's discuss how my operational expertise and hospitality experience can add value to your team.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider">Location</h4>
+                            <p class="text-primary-900 font-medium">Tulungagung, East Java, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider">Email</h4>
+                            <a href="mailto:wildanmukhti1@gmail.com" class="text-primary-900 font-medium hover:text-primary-600 transition-colors">wildanmukhti1@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider">Phone / WhatsApp</h4>
+                            <a href="tel:+6288227045750" class="text-primary-900 font-medium hover:text-primary-600 transition-colors">+62 882-2704-5750</a>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center text-xl flex-shrink-0">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider">Social Media</h4>
+                            <a href="https://instagram.com/wildanfahrezi__" target="_blank" class="text-primary-900 font-medium hover:text-primary-600 transition-colors">@wildanfahrezi__</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Your Email</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white" placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors shadow-md">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-success" class="hidden mt-4 p-4 rounded-xl bg-green-50 text-green-700 text-sm font-medium text-center">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <span class="text-lg font-bold tracking-tight">Wildan Mukti Fahrezi</span>
+                <p class="text-slate-300 text-sm mt-1">Operations & Hospitality Professional</p>
+            </div>
+            <p class="text-slate-400 text-xs">&copy; 2026 Wildan Mukti Fahrezi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Certificate modal functions
+        function openModal(imgSrc, title) {
+            const modal = document.getElementById('cert-modal');
+            const modalImg = document.getElementById('modal-img');
+            const modalTitle = document.getElementById('modal-title');
+            
+            modalImg.src = imgSrc;
+            modalTitle.textContent = title;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('cert-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('cert-modal');
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Contact form submission handler without alert
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successMsg = document.getElementById('form-success');
+            successMsg.classList.remove('hidden');
+            event.target.reset();
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
